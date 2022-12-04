@@ -8,9 +8,7 @@ console.log(
   input
     .map((pair) => pair.split(","))
     .map((pair) => pair.map((range) => range.split("-")))
-    .map((pair) =>
-      pair.map((range) => [parseInt(range[0]), parseInt(range[1])])
-    )
+    .map((pair) => pair.map((range) => [+range[0], +range[1]]))
     .map((pair) =>
       pair.map((range) => [Math.min(...range), Math.max(...range)])
     )
