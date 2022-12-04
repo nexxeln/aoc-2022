@@ -1,12 +1,14 @@
 import { format } from "https://deno.land/std@0.91.0/datetime/mod.ts";
 
-const day = format(new Date(), "d");
+const day = format(new Date(), "dd");
 console.log(day);
 
 const dir = `day-${day}`;
 
 const encoder = new TextEncoder();
-const data = encoder.encode("export {}");
+const data = encoder.encode(`export {}\n
+const input = await Deno.readTextFile("./input.txt");
+`);
 
 await Deno.mkdir(dir);
 await Deno.create(`./${dir}/input.txt`);
