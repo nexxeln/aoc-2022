@@ -4,7 +4,7 @@ File.read!("./input.txt")
   elf
   |> String.split("\n")
   |> Enum.map(fn elf -> elf |> String.to_integer() end)
-  |> Enum.reduce(fn a, b -> a + b end)
+  |> Enum.sum()
 end)
 |> Enum.sort(:desc)
 |> Enum.slice(0..2)
