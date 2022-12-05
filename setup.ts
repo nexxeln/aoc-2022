@@ -1,6 +1,6 @@
 import { format } from "https://deno.land/std@0.91.0/datetime/mod.ts";
 
-const day = format(new Date(), "dd");
+const day = format(new Date(), "d");
 console.log(day);
 
 const dir = `day-${day}`;
