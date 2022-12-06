@@ -1,0 +1,7 @@
+File.read!("./input.txt")
+|> String.split("", trim: true)
+|> Enum.chunk_every(4, 1)
+|> Enum.take_while(fn items -> Enum.count(MapSet.new(items)) != 4 end)
+|> Enum.count()
+|> then(&(&1 + 4))
+|> IO.inspect()
