@@ -43,8 +43,8 @@ const exec = (line: string) => {
 
     current = current.parent;
   } else {
-    const newDirectory = current.body.find((d) => d.name === dir);
-    current = newDirectory as Directory;
+    const newDir = current.body.find((d) => d.name === dir);
+    current = newDir as Directory;
   }
   ls = false;
 };
