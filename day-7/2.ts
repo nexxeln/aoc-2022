@@ -38,7 +38,7 @@ const exec = (line: string) => {
   const dir = cmd.split(" ")[1];
   if (dir === "..") {
     if (!current.parent) {
-      throw new Error("no");
+      throw new Error("you failed");
     }
 
     current = current.parent;
