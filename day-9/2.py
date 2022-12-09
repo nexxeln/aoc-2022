@@ -19,7 +19,7 @@ def hi(h, l):
         h[1] -= 1
 
 
-with open("input.txt") as f:
+with open(0) as f:
     pt = set()
     pt.add((0, 0))
     h = [0, 0]

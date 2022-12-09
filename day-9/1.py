@@ -1,10 +1,9 @@
-with open("input.txt") as f:
+with open(0) as f:
     pt = set()
     pt.add((0, 0))
     h = [0, 0]
     t = [0, 0]
 
-    print(pt)
     for line in f:
         l = line.strip().split(" ")
         for i in range(int(l[1])):
