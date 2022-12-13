@@ -23,9 +23,9 @@ def compare(a, b):
         return compare(a, [b])
 
 
-for i, (a, b) in enumerate(input):
+for i, (a, b) in enumerate(input, start=1):
     x = compare(eval(a), eval(b))
     if x < 0:
-        t += i + 1
+        t += i
 
 print(t)
