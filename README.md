@@ -4,4 +4,7 @@
 <p>
 Update: Going to use <a href="https://python.org">Python</a> like a normie.
 </p>
+<p>
+I quit.
+</p>
 </samp>
